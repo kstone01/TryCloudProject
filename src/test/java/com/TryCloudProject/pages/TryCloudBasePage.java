@@ -23,7 +23,7 @@ public class TryCloudBasePage {
     @FindBy(xpath = "//a[@data-action='menu']")
     public WebElement threeDotsMenu;
 
-    @FindBy(xpath = "(//li)[55]//span[.='Delete folder']")
+    @FindBy(xpath = "//tbody//a[@data-action='Delete']")
     public  WebElement deleteFolderButton;
 
     @FindBy(xpath = "//td/span[@class='info']")
