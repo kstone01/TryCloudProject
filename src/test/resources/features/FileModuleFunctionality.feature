@@ -33,7 +33,7 @@ Feature: File functionality
     Then user should no longer see file on Files page
 
 
-  #scenario 4
+  #scenario 4 --> PASSED
   @B30G22-118
   Scenario: User can see the total number of files and folders under the files list table
     When user clicks the files icon at the top of the page

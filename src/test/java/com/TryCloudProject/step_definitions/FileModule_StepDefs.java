@@ -74,7 +74,7 @@ public class FileModule_StepDefs {
     }
 
     //-----------------------------------------------------
-    //scenario 2
+    //scenario 2 --> PASSED
     @Then("user clicks New Folder button")//done
     public void userClicksNewFolderButton() {
 
@@ -108,17 +108,19 @@ public class FileModule_StepDefs {
         tryCloudBasePage.threeDotsMenu.click();
     }
 
-    @And("user clicks Delete Folder button")
+    @And("user clicks Delete Folder button")// done
     public void userClicksDeleteFolderButton() {
 
-        tryCloudBasePage.deleteFolderButton.click();// unable to delete button
+        tryCloudBasePage.deleteFolderButton.click();
     }
 
-    @Then("user should no longer see file on Files page")//done
+    @Then("user should no longer see file on Files page")//StaleElementReferenceException
     public void userShouldNoLongerSeeFileOnFilesPage() {
 
         Assert.assertFalse(tryCloudBasePage.itemToSelect.isDisplayed());
     }
+
+    //-----------------------------------------------------
 
     //scenario #4 --> PASSED
     @When("user scrolls to the bottom of the Files page")
